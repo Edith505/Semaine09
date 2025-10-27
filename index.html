@@ -4,14 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="javascript/script.js"></script>
 </head>
-<body>
-    <h1>Cours jQuery</h1>
+<body class="bg-light">
 
-    <p id="p1">Premier paragraphe</p>
-    <p id="p2">Deuxieme paragraphe</p>
-    <p id="p3">Cliquez ici pour afficher paragraphe p1</p>
+<div class="container py-5">
+    <div class="text-center mb-4">
+        <h1 class="fw-bold text-primary">Cours jQuery</h1>
+        <p class="text-muted">Exemples d’interactions avec jQuery et Bootstrap</p>
+    </div>
+
+    <div class="card shadow-sm mx-auto" style="max-width: 500px;">
+        <div class="card-body">
+            <p id="p1" class="alert alert-info">Premier paragraphe</p>
+            <p id="p2" class="alert alert-secondary">Deuxième paragraphe</p>
+            <p id="p3" class="text-center text-decoration-underline text-primary" style="cursor:pointer;">
+                Cliquez ici pour afficher le paragraphe p1
+            </p>
+
+            <hr>
+
+            <form>
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+                    <div id="nom-err" class="form-text text-danger">Veuillez vérifier le nom.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="prenom" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom">
+                </div>
+
+                <div class="mb-4">
+                    <label for="courriel" class="form-label">Courriel</label>
+                    <input type="email" class="form-control" id="couriel" placeholder="exemple@domaine.com">
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="button" id="submit" class="btn btn-success w-50 me-2">Envoyer</button>
+                    <button type="button" id="annuller" class="btn btn-outline-danger w-50">Annuler</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
